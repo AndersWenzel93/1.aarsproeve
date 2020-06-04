@@ -1,0 +1,107 @@
+html {
+    scroll-behavior: smooth;
+  }
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+  }
+
+.header{
+    grid-column: 1/7;
+    border:solid;
+}
+.logo{
+    grid-column: 2/3;
+    grid-row: 1;
+    border:solid;
+
+}
+.aabningstider{
+    grid-column: 5/6;
+    grid-row: 1;
+    border:solid;
+
+}
+nav{
+    grid-column: 3/5;
+    grid-row: 1;
+}
+.menu{
+    grid-column:3/5;
+    grid-row: 1;
+    border:solid;
+    list-style-type: none;
+    font-family: 'Vidaloka';
+}
+.banner{
+    grid-column: 2/6;
+    grid-row: 2;
+    border:solid;
+
+}
+.background{
+    background-image: url();
+    grid-column: 1/7;
+    grid-row: 2;
+    z-index: -5;
+    margin-top: 100px;
+    border:solid;
+
+}
+.content1{
+    grid-column: 2/4;
+    grid-row: 3;
+    border:solid;
+    font-family: 'Vidaloka';
+
+}
+.content2{
+    grid-column: 4/6;
+    grid-row: 3;
+    border:solid;
+    font-family: 'Open Sans';
+
+}
+footer{
+    grid-column: 1/7;
+    grid-row:4;
+}
+.footerinfo{
+    grid-column: 2/3;
+    grid-row: 4;
+    border:solid;
+    font-family: 'Open Sans';
+}
+.sometext{
+    border:solid;
+    grid-column: 5/6;
+    grid-row: 4;
+    border:solid;
+    font-family: 'Open Sans';
+
+}
+.FBicon{
+    border:solid;
+    grid-column: 5/6;
+    grid-row: 4;
+    border:solid;
+
+}
+.IGicon{
+    border:solid;
+    grid-column: 5/6;
+    grid-row: 4;
+    border:solid;
+
+}
