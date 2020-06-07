@@ -7,20 +7,27 @@
 <link href="https://fonts.googleapis.com/css?family=Vidaloka|Open+Sans|Roboto&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans|Roboto&display=swap" rel="stylesheet">
 <title>Blomsterkompagniet</title>
-<section class="header">
+</head>
+<body>
     <img class="logo" src="BKLogo.png">
+    <img id="burger" src="burgermenulukket.png" class="burger">
+    <img id="burgeraaben" src="burgermenuaaben.png" class="burgeraaben">
     <nav>
-        <ul>
+        <ul class="menu">
             <li class="lileft"><a href="index.html">Forside</a></li>
             <li class="lileft"><a href="galleri.html">Galleri</a></li>
             <li class="lileft"><a href="bestilling.html">Bestilling</a></li>
             <li class="lileft"><a href="omos.html">Om os</a></li>
-            <li class="liright">Grundet covid-19 har vi midlertidigt åbent: Man - Tor 10:00 - 14:00</li>
+            <li class="liright">Grundet covid-19 har vi midlertidigt åbent: Man - Tor 10:00 - 14:00</p></li>
         </ul>
     </nav>
-</section>
-</head>
-<body>
+    <ul class="burgermenu" id="burgermenu">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="bestilling.html">Bestilling</a></li>
+        <li><a href="omos.html">Om os</a></li>
+        <li class="liright">Grundet covid-19 har vi midlertidigt åbent: Man - Tor 10:00 - 14:00</p></li>
+    </ul>
     <article class="omoscontent1">
         <h1>Velkommen hos Blomsterkompagniet</h1>
         <p>Kompagniet har beliggenhed i Hellerup,
@@ -50,14 +57,33 @@
 
 </body>
 <footer>
-    <section class="footerinfo">
-    <p>Rebækkavej 49, 2900 Hellerup</p>
-    <p>Tlf: 39 62 20 76</p> 
-    </section>
-    <section class="some">
+    <p class="footerinfo">Rebækkavej 49, 2900 Hellerup</p>
+    <p class="footerinfo2">Tlf: 39 62 20 76</p> 
     <p class="sometext">Følg os:</p>
     <img class="FBicon" src="Facebook1.png">
     <img class="IGicon" src="Instagram.png">
     </section>
-</footer>    
+</footer>  
+<script src="https://code.jquery.com/jquery-3.5.0.js"
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        $('#burger').on('click', function(){
+             $('#burgermenu').slideDown(300);
+            $('#burger').hide();
+            $('#burgeraaben').show();
+        });
+            
+        });
+        $(document).ready(function(){
+            $('#burgeraaben').on('click', function(){
+                $('#burgermenu').slideUp(300);
+                $('#burgeraaben').hide();
+                $('#burger').show();
+            });
+            
+        });
+        
+    </script>    
 </html>
