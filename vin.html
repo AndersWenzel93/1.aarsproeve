@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="dk">   
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Vidaloka|Open+Sans|Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans|Roboto&display=swap" rel="stylesheet">
+<title>Blomsterkompagniet</title>
+</head>
+<body>
+    <img class="logo" src="BKLogo.png">
+    <img id="burger" src="burgermenulukket.png" class="burger">
+    <img id="burgeraaben" src="burgermenuaaben.png" class="burgeraaben">
+    <nav>
+        <ul class="menu">
+            <li class="lileft"><a href="index.html">Forside</a></li>
+            <li class="lileft"><a href="galleri.html">Galleri</a></li>
+            <li class="lileft"><a href="bestilling.html">Bestilling</a></li>
+            <li class="lileft"><a href="omos.html">Om os</a></li>
+            <li class="liright">Grundet covid-19 har vi midlertidigt åbent: Man - Tor 10:00 - 14:00</p></li>
+        </ul>
+    </nav>
+    <ul class="burgermenu" id="burgermenu">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="bestilling.html">Bestilling</a></li>
+        <li><a href="omos.html">Om os</a></li>
+        <li class="liright">Grundet covid-19 har vi midlertidigt åbent: Man - Tor 10:00 - 14:00</p></li>
+    </ul>
+    <p class="gallerimenubuket"><a href="galleri.html">Buketter</a></p>
+    <p class="gallerimenuplanter"><a href="planter.html">Planter</a></p>
+    <p class="gallerimenuchokolade"><a href="chokolade.html">Chokolade</a></p>
+    <p class="gallerimenuvin"><a href="#Vin" class="active">Vin</a></p>
+      
+    <p class="info">Vær opmærksom på at billeder samt priser er vejledende</p>
+
+        <img class="item13" src="vin.jpg">
+        <p class="item13tekst">Vin</p>
+        <p class="item13pris"> DKK 179,-</p>
+        <div class="vl1"></div>
+        <img class="item14" src="vin.jpg">
+        <p class="item14tekst">Vin</p>
+        <p class="item14pris"> DKK 249,-</p> 
+        <div class="vl2"></div>
+        <img class="item15" src="vin.jpg">
+        <p class="item15tekst">Vin</p>
+        <p class="item15pris"> DKK 299,-</p> 
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.0.js"
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        $('#burger').on('click', function(){
+             $('#burgermenu').slideDown(300);
+            $('#burger').hide();
+            $('#burgeraaben').show();
+        });
+            
+        });
+        $(document).ready(function(){
+            $('#burgeraaben').on('click', function(){
+                $('#burgermenu').slideUp(300);
+                $('#burgeraaben').hide();
+                $('#burger').show();
+            });
+            
+        });
+        
+    </script>    
+</html>
