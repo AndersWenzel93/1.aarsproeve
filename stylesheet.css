@@ -522,6 +522,9 @@ p a{
 @media only screen and (max-width: 1020px){
 .menu{display: none;
 }
+h1{
+    font-size: 15px;
+}
 .burger{
     display: block;
     grid-column: 9/13;
