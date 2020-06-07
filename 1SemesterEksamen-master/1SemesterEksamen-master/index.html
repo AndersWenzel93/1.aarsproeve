@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="dk">   
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/cnk0ety.css">
+<link href="https://fonts.googleapis.com/css?family=Vidaloka|Open+Sans|Roboto&display=swap" rel="stylesheet">
+
+<title>Blomsterkompagniet</title>
+</head>
+<body>
+    <img class="logo" src="Primar Logo.png">
+    <img id="burger" src="burgermenulukket.png" class="burger">
+    <img id="burgeraaben" src="burgermenuaaben.png" class="burgeraaben">
+    <nav>
+       <ul class="menu">
+            <li class="lileft"><a href="index.html">Forside</a></li>
+            <li class="lileft"><a href="galleri.html">Galleri</a></li>
+            <li class="lileft"><a href="bestilling.html">Bestilling</a></li>
+            <li class="lileft"><a href="omos.html">Om os</a></li>
+            <li class="liright">Grundet covid-19 har vi midlertidigt åbent: Man - Tor 10:00 - 14:00</p></li>
+        </ul>
+    </nav>
+    <ul class="burgermenu" id="burgermenu">
+        <li><a href="index.html">Forside</a></li>
+        <li><a href="galleri.html">Galleri</a></li>
+        <li><a href="bestilling.html">Bestilling</a></li>
+        <li><a href="omos.html">Om os</a></li>
+        <li class="liright">Grundet covid-19 har vi midlertidigt åbent: Man - Tor 10:00 - 14:00</p></li>
+    </ul>
+    <img class="banner" src="banner.jpg">
+    <article class="content1">
+        <h1>Velkommen hos Blomsterkompagniet</h1>
+        <p>Kompagniet har beliggenhed i Hellerup,
+  
+            meget tæt på stationen og har eksisteret i over 20 år.</p>
+            
+           <p> Der er altid god stemning og meget hyggelig
+             
+            atmosfære og kvaliteten er i top.</p>
+            
+            <p>Vi lægger stor vægt på at vores kunder får en god og
+             
+            sjov oplevelse når de handler hos os - derfor er
+             
+            service en stor del af vores koncept.</p>
+            
+           <p>Blomster Kompagniet er medlem af Interflora og
+            
+            udover vores sortiment i blomster og planter,
+             
+            sælger vi vin, chokolade og andet brugskunst.</p>
+    </article>
+    <article class="content2">
+        <center>
+        <a href="galleri.html"><img class="content2image" src="content2.jpg"></a>
+        </center>
+    </article> 
+
+
+</body>
+<footer>
+    <p class="footerinfo">Rebekkavej 49, 2900 Hellerup</p>
+    <p class="footerinfo2">Tlf: 39 62 20 76</p> 
+    <p class="sometext">Følg os:</p>
+    <img class="FBicon" src="Facebook1.png">
+    <img class="IGicon" src="Instagram.png">
+    </section>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.0.js"
+    integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+    crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+        $('#burger').on('click', function(){
+             $('#burgermenu').slideDown(300);
+            $('#burger').hide();
+            $('#burgeraaben').show();
+        });
+            
+        });
+        $(document).ready(function(){
+            $('#burgeraaben').on('click', function(){
+                $('#burgermenu').slideUp(300);
+                $('#burgeraaben').hide();
+                $('#burger').show();
+            });
+            
+        });
+        
+    </script>    
+</html>
