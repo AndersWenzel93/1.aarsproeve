@@ -12,11 +12,11 @@ footer{
     grid-template-rows: none;
   }
  h1{
-    font-family: 'Vidaloka'; 
+    font-family: 'Termina'; 
  } 
 
  h2{
-    font-family: 'Vidaloka'; 
+    font-family: 'Termina'; 
  } 
 
  p{
@@ -51,7 +51,7 @@ nav{
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    font-family: 'Vidaloka';
+    font-family: 'Termina';
   }
   
 .lileft {
@@ -62,7 +62,7 @@ nav{
     background-color:#D8FFC9;
     color: black;
     padding: 14px 16px;
-    font-family: 'Vidaloka';
+    font-family: 'Termina';
     
 }
   
@@ -72,13 +72,13 @@ nav{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Vidaloka';
+    font-family: 'Termina';
   }
 
   li a:hover {
     background-color:#D8FFC9;
     color: black;
-    font-family: 'Vidaloka';
+    font-family: 'Termina';
   }
 .banner{
     grid-column: 2/12;
@@ -549,7 +549,7 @@ h1{
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    font-family: 'Vidaloka';
+    font-family: 'Termina';
 }
 .burgermenu a{    
     display: block;
@@ -557,7 +557,7 @@ h1{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-family: 'Vidaloka';
+    font-family: 'Termina';
 }
 
 .logo{
@@ -632,16 +632,16 @@ text-align: center;
 
 /* Styling for mobile "Bestilling" */
 .bestillingcontent1{
-    grid-column: 1/7;
-    grid-row: 3;
+    grid-column: 1/13;
+    grid-row: 4;
     max-width: 100%;
     margin-top: 2%;
     margin-right:1%;
-    font-size: 12px;
+    font-size: 15px;
 
 }
 .bestillingcontent2{
-    grid-column: 7/13;
+    grid-column: 1/13;
     grid-row: 3;
     margin-top: 2%;
     margin-left:1%;
@@ -653,19 +653,16 @@ text-align: center;
 /*Styling for mobile "Om os"*/
 
 .omoscontent1{
-    grid-column: 1/7;
-    grid-row: 3;
-    max-width: 100%;
+    grid-column: 1/13;
+    grid-row: 4;
     margin-top: 2%;
-    margin-right:1%;
-    font-size: 12px;
+    font-size: 15px;
 
 }
 .omoscontent2{
-    grid-column: 7/13;
+    grid-column: 1/13;
     grid-row: 3;
     margin-top: 2%;
-    margin-left:1%;
 }
 
 .omosimage1{
